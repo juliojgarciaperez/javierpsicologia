@@ -1,19 +1,19 @@
 /* ---------- Design tokens ---------- */
 :root {
-  /* colors: sand/beige + slate blue accent */
-  --color-primary: #4a5a6a;
-  --color-primary-dark: #384552;
-  --color-accent: #8a9bab;
+  /* colors: crema/beige + olive green */
+  --color-primary: #66705a;
+  --color-primary-dark: #4f5846;
+  --color-accent: #a6ad98;
 
-  --color-bg: #faf7f2;
-  --color-bg-alt: #f2ece3;
-  --color-bg-dark: #2b2926;
+  --color-bg: #f4f0e8;
+  --color-bg-alt: #faf8f4;
+  --color-bg-dark: #292a28;
 
-  --color-border: #e4dccf;
+  --color-border: #d8ccb8;
 
-  --color-text: #2b2926;
+  --color-text: #292a28;
   --color-text-soft: #6b6459;
-  --color-text-on-dark: #faf7f2;
+  --color-text-on-dark: #f4f0e8;
   --color-text-on-dark-soft: #c9c2b6;
 
   --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -144,7 +144,7 @@ a { color: var(--color-primary); text-decoration: none; }
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(250, 247, 242, 0.92);
+  background: rgba(244, 240, 232, 0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--color-border);
 }
