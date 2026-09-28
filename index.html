@@ -66,7 +66,7 @@
               que están generando malestar o interfiriendo en su día a día.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="[URL_RESERVAS]"
+              <a class="btn btn-primary" href="[URL_RESERVAS]" target="_blank" rel="noopener"
                 >Reservar una sesión</a
               >
               <a class="btn btn-secondary" href="#contacto"
@@ -498,7 +498,7 @@
               Si tu situación económica hace difícil asumir esta tarifa, puedes
               escribirme y valoraremos juntos las opciones disponibles.
             </p>
-            <a class="btn btn-primary" href="[URL_RESERVAS]"
+            <a class="btn btn-primary" href="[URL_RESERVAS]" target="_blank" rel="noopener"
               >Consultar disponibilidad</a
             >
           </div>
@@ -651,10 +651,10 @@
             </p>
             <!-- TODO: sustituir [URL_RESERVAS], [TELEFONO_WHATSAPP] y javiergpsicologo@gmail.com por los datos reales -->
             <div class="contact-actions">
-              <a class="btn btn-light" href="[URL_RESERVAS]"
+              <a class="btn btn-light" href="[URL_RESERVAS]" target="_blank" rel="noopener"
                 >Reservar una sesión</a
               >
-              <a class="btn btn-outline-light" href="https://wa.me/+34619660770"
+              <a class="btn btn-outline-light" href="https://wa.me/+34619660770" target="_blank" rel="noopener"
                 >WhatsApp</a
               >
               <a
@@ -721,7 +721,7 @@
               <input type="checkbox" name="Acepta privacidad" required />
               <span
                 >He leído y acepto la
-                <a href="politica-privacidad.html">política de privacidad</a
+                <a href="politica-privacidad.html" target="_blank" rel="noopener">política de privacidad</a
                 >.</span
               >
             </label>
@@ -757,21 +757,27 @@
         <div>
           <p class="footer-title">Legal</p>
           <ul>
-            <li><a href="aviso-legal.html">Aviso legal</a></li>
+            <li><a href="aviso-legal.html" target="_blank" rel="noopener">Aviso legal</a></li>
             <li>
-              <a href="politica-privacidad.html">Política de privacidad</a>
+              <a href="politica-privacidad.html" target="_blank" rel="noopener">Política de privacidad</a>
             </li>
-            <li><a href="politica-cookies.html">Política de cookies</a></li>
+            <li><a href="politica-cookies.html" target="_blank" rel="noopener">Política de cookies</a></li>
           </ul>
         </div>
         <div>
           <p class="footer-title">Redes sociales</p>
           <ul>
-            <li><a href="[URL_INSTAGRAM]">Instagram</a></li>
+            <li>
+              <a
+                href="https://www.instagram.com/javiergarciapsicologo/" target="_blank" rel="noopener"
+                >Instagram</a
+              >
+            </li>
           </ul>
         </div>
       </div>
-      <p class="copyright">© 2026 Javier García | Psicología</p>
+      <p class="copyright">© <span id="year">2026</span> Javier García | Psicología</p>
     </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
