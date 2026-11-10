@@ -460,3 +460,7 @@ details[open] summary { margin-bottom: var(--space-3); }
 @media (min-width: 1000px) {
   .cards-grid { grid-template-columns: repeat(3, 1fr); }
 }
+
+.inline-more { margin: 0 0 var(--space-4); }
+.inline-more summary { color: var(--color-primary); font-weight: 600; }
+.inline-more p { margin-top: var(--space-4); }
