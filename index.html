@@ -115,13 +115,7 @@
               que están generando malestar o interfiriendo en su día a día.
             </p>
             <div class="hero-actions">
-              <a
-                class="btn btn-primary"
-                href="https://wa.me/34659029045?text=Hola%20Javier%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n."
-                target="_blank"
-                rel="noopener"
-                >Reservar una sesión</a
-              >
+              <a class="btn btn-primary" href="#reserva">Reservar una sesión</a>
               <a class="btn btn-secondary" href="#contacto"
                 >Contactar conmigo</a
               >
@@ -753,13 +747,7 @@
             <p>Si ya has decidido comenzar, puedes reservar directamente.</p>
             <!-- TODO: sustituir [URL_RESERVAS], [TELEFONO_WHATSAPP] y javiergpsicologo@gmail.com por los datos reales -->
             <div class="contact-actions">
-              <a
-                class="btn btn-light"
-                href="https://wa.me/34659029045?text=Hola%20Javier%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n."
-                target="_blank"
-                rel="noopener"
-                >Reservar una sesión</a
-              >
+              <a class="btn btn-light" href="#reserva">Reservar una sesión</a>
               <a
                 class="btn btn-outline-light"
                 href="https://wa.me/34659029045"
@@ -831,6 +819,32 @@
           </form>
         </div>
       </section>
+
+      <!-- 11. Reserva de cita -->
+      <section
+        class="section section-alt"
+        id="reserva"
+        aria-labelledby="reserva-title"
+      >
+        <div class="container prose">
+          <p class="eyebrow">Reserva online</p>
+          <h2 id="reserva-title">Reserva tu cita a través de Doctoralia</h2>
+          <p>Consulta la disponibilidad y reserva tu cita online.</p>
+          <a
+            id="zl-url"
+            class="zl-url"
+            href="https://www.doctoralia.es/perfil/javier-garcia-perez-2"
+            rel="nofollow"
+            data-zlw-doctor="javier-garcia-perez-2"
+            data-zlw-type="big_with_calendar"
+            data-zlw-opinion="false"
+            data-zlw-hide-branding="true"
+            data-zlw-saas-only="true"
+            data-zlw-a11y-title="Widget de reserva de citas médicas"
+            >Reserve una cita</a
+          >
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -884,6 +898,18 @@
           document.getElementById("nav-toggle").checked = false;
         }),
       );
+    </script>
+    <script>
+      !(function (document, scriptTag, id) {
+        var script;
+        var firstScript = document.getElementsByTagName(scriptTag)[0];
+        if (!document.getElementById(id)) {
+          script = document.createElement(scriptTag);
+          script.id = id;
+          script.src = "https://platform.docplanner.com/js/widget.js";
+          firstScript.parentNode.insertBefore(script, firstScript);
+        }
+      })(document, "script", "zl-widget-s");
     </script>
   </body>
 </html>
